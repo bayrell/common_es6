@@ -1,0 +1,9 @@
+{
+  "description": "BayrellCommon",
+  "files": [
+    "*.js"
+  ],
+  "main": "index.js",
+  "name": "bayrell-common-es6",
+  "version": "0.4.2"
+}
