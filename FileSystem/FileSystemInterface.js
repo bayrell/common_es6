@@ -44,12 +44,12 @@ BayrellCommon.FileSystem.FileSystemInterface = class{
 		if (basedir == undefined) basedir="";
 	}
 	/**
-	 * Returns files content
+	 * Returns content of the file
 	 * @param string filepath
 	 * @param string charset
 	 * @return string
 	 */
-	loadFile(filepath, charset){
+	readFile(filepath, charset){
 		if (filepath == undefined) filepath="";
 		if (charset == undefined) charset="utf8";
 	}

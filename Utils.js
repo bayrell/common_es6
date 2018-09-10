@@ -19,6 +19,7 @@
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 BayrellCommon.Utils = class{
 	getClassName(){return "BayrellCommon.Utils";}
+	static getParentClassName(){return "";}
 	/**
 	 * Equals value1 and value2. Throw exception if value1 != value2
 	 * @param var value1

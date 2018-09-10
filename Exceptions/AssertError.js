@@ -17,7 +17,15 @@
  *  limitations under the License.
  */
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
-BayrellCommon.CommonConstant = class{
-	getClassName(){return "BayrellCommon.CommonConstant";}
-	static getParentClassName(){return "";}
+if (typeof BayrellCommon.Exceptions == 'undefined') BayrellCommon.Exceptions = {};
+BayrellCommon.Exceptions.AssertError = class extends Runtime.Exceptions.RuntimeException{
+	getClassName(){return "BayrellCommon.Exceptions.AssertError";}
+	static getParentClassName(){return "Runtime.Exceptions.RuntimeException";}
+	constructor(context, message, prev){
+		if (prev == undefined) prev=null;
+		if (message == ""){
+			message = Runtime.Utils.translate("ERROR_ASSERT", null, "", context);
+		}
+		super(context, message, Runtime.RuntimeConstant.ERROR_ASSERT, prev);
+	}
 }

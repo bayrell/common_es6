@@ -16,8 +16,29 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+/**
+ * Provider "default:translate" 
+ */
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
-BayrellCommon.CommonConstant = class{
-	getClassName(){return "BayrellCommon.CommonConstant";}
-	static getParentClassName(){return "";}
+if (typeof BayrellCommon.Providers == 'undefined') BayrellCommon.Providers = {};
+BayrellCommon.Providers.TranslateInterface = class{
+	/**
+	 * Set application locale
+	 * @params string locale
+	 */
+	setLocale(locale){
+	}
+	/**
+	 * Get application locale
+	 * @params string locale
+	 */
+	getLocale(){
+	}
+	/**
+	 * Log message
+	 */
+	translate(message, params, locale){
+		if (params == undefined) params=null;
+		if (locale == undefined) locale="";
+	}
 }

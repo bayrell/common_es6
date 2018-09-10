@@ -16,8 +16,20 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+/**
+ * Provider "default:log" 
+ */
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
-BayrellCommon.CommonConstant = class{
-	getClassName(){return "BayrellCommon.CommonConstant";}
-	static getParentClassName(){return "";}
+if (typeof BayrellCommon.Providers == 'undefined') BayrellCommon.Providers = {};
+BayrellCommon.Providers.LogInterface = class{
+	/**
+	 * Log message
+	 */
+	log(level, module_name, message){
+	}
+	/**
+	 * Log exception
+	 */
+	logException(level, module_name, e){
+	}
 }

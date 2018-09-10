@@ -17,7 +17,11 @@
  *  limitations under the License.
  */
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
-BayrellCommon.CommonConstant = class{
-	getClassName(){return "BayrellCommon.CommonConstant";}
+if (typeof BayrellCommon.FileSystem == 'undefined') BayrellCommon.FileSystem = {};
+BayrellCommon.FileSystem.FileInfo = class{
+	getClassName(){return "BayrellCommon.FileSystem.FileInfo";}
 	static getParentClassName(){return "";}
+	_init(){
+		this.path = "";
+	}
 }

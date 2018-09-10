@@ -17,7 +17,25 @@
  *  limitations under the License.
  */
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
-BayrellCommon.CommonConstant = class{
-	getClassName(){return "BayrellCommon.CommonConstant";}
+if (typeof BayrellCommon.Types == 'undefined') BayrellCommon.Types = {};
+BayrellCommon.Types.PathInfo = class{
+	getClassName(){return "BayrellCommon.Types.PathInfo";}
 	static getParentClassName(){return "";}
+	_init(){
+		this.filepath = "";
+		this.dirname = "";
+		this.basename = "";
+		this.extension = "";
+		this.filename = "";
+		if (this.__implements__ == undefined){this.__implements__ = [];}
+		this.__implements__.push(Runtime.Interfaces.StringInterface);
+	}
+	/**
+	 * Returns string
+	 */
+	toString(){
+		return this.filepath;
+	}
 }
+BayrellCommon.Types.PathInfo.__static_implements__ = [];
+BayrellCommon.Types.PathInfo.__static_implements__.push(Runtime.Interfaces.StringInterface)
