@@ -19,12 +19,6 @@
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 if (typeof BayrellCommon.Types == 'undefined') BayrellCommon.Types = {};
 BayrellCommon.Types.Pipe = class extends Runtime.CoreObject{
-	getClassName(){return "BayrellCommon.Types.Pipe";}
-	static getParentClassName(){return "Runtime.CoreObject";}
-	_init(){
-		super._init();
-		this.pipe = null;
-	}
 	/**
 	 * Constructor
 	 */
@@ -79,5 +73,12 @@ BayrellCommon.Types.Pipe = class extends Runtime.CoreObject{
 		return this.pipe.reduce((res, item) => {
 			return item(res);
 		}, obj);
+	}
+	/* ======================= Class Init Functions ======================= */
+	getClassName(){return "BayrellCommon.Types.Pipe";}
+	static getParentClassName(){return "Runtime.CoreObject";}
+	_init(){
+		super._init();
+		this.pipe = null;
 	}
 }

@@ -34,4 +34,5 @@ BayrellCommon.FileSystem.FileInterface = class{
 	 */
 	close(){
 	}
+	/* ======================= Class Init Functions ======================= */
 }

@@ -19,6 +19,7 @@
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 if (typeof BayrellCommon.FileSystem == 'undefined') BayrellCommon.FileSystem = {};
 BayrellCommon.FileSystem.FileInfo = class{
+	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.FileSystem.FileInfo";}
 	static getParentClassName(){return "";}
 	_init(){

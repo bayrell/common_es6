@@ -19,13 +19,14 @@
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 if (typeof BayrellCommon.Exceptions == 'undefined') BayrellCommon.Exceptions = {};
 BayrellCommon.Exceptions.AssertError = class extends Runtime.Exceptions.RuntimeException{
-	getClassName(){return "BayrellCommon.Exceptions.AssertError";}
-	static getParentClassName(){return "Runtime.Exceptions.RuntimeException";}
-	constructor(context, message, prev){
+	constructor(message, context, prev){
 		if (prev == undefined) prev=null;
 		if (message == ""){
 			message = Runtime.Utils.translate("ERROR_ASSERT", null, "", context);
 		}
-		super(context, message, Runtime.RuntimeConstant.ERROR_ASSERT, prev);
+		super(message, Runtime.RuntimeConstant.ERROR_ASSERT, context, prev);
 	}
+	/* ======================= Class Init Functions ======================= */
+	getClassName(){return "BayrellCommon.Exceptions.AssertError";}
+	static getParentClassName(){return "Runtime.Exceptions.RuntimeException";}
 }

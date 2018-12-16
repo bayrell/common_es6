@@ -32,4 +32,5 @@ BayrellCommon.Providers.LogInterface = class{
 	 */
 	logException(level, module_name, e){
 	}
+	/* ======================= Class Init Functions ======================= */
 }

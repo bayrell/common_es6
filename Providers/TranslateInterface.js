@@ -41,4 +41,5 @@ BayrellCommon.Providers.TranslateInterface = class{
 		if (params == undefined) params=null;
 		if (locale == undefined) locale="";
 	}
+	/* ======================= Class Init Functions ======================= */
 }

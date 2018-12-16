@@ -19,13 +19,6 @@
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 if (typeof BayrellCommon.System == 'undefined') BayrellCommon.System = {};
 BayrellCommon.System.StreamReader = class extends Runtime.CoreObject{
-	getClassName(){return "BayrellCommon.System.StreamReader";}
-	static getParentClassName(){return "Runtime.CoreObject";}
-	_init(){
-		super._init();
-		this.stream = null;
-		this.charset = "utf8";
-	}
 	/**
 	 * Create object
 	 */
@@ -62,7 +55,7 @@ BayrellCommon.System.StreamReader = class extends Runtime.CoreObject{
 		var i = 0;
 		while (!this.stream.isEOF() && i < length){
 			s += this.readChar();
-			i++
+			i++;
 		}
 		return s;
 	}
@@ -91,5 +84,13 @@ BayrellCommon.System.StreamReader = class extends Runtime.CoreObject{
 		}
 		var s = Utils.bytesToString(res, this.charset);
 		return s;
+	}
+	/* ======================= Class Init Functions ======================= */
+	getClassName(){return "BayrellCommon.System.StreamReader";}
+	static getParentClassName(){return "Runtime.CoreObject";}
+	_init(){
+		super._init();
+		this.stream = null;
+		this.charset = "utf8";
 	}
 }

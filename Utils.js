@@ -18,8 +18,6 @@
  */
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 BayrellCommon.Utils = class{
-	getClassName(){return "BayrellCommon.Utils";}
-	static getParentClassName(){return "";}
 	/**
 	 * Equals value1 and value2. Throw exception if value1 != value2
 	 * @param var value1
@@ -50,7 +48,7 @@ BayrellCommon.Utils = class{
 		ret.dirname = Runtime.rs.implode("/", arr2);
 		var ext_length = Runtime.rs.strlen(ret.extension);
 		if (ext_length > 0){
-			ext_length++
+			ext_length++;
 		}
 		ret.filename = Runtime.rs.substr(ret.basename, 0, -1 * ext_length);
 		return ret;
@@ -112,4 +110,7 @@ BayrellCommon.Utils = class{
 		});
 		return Runtime.rs.implode(ch, source);
 	}
+	/* ======================= Class Init Functions ======================= */
+	getClassName(){return "BayrellCommon.Utils";}
+	static getParentClassName(){return "";}
 }

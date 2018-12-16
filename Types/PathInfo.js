@@ -19,6 +19,13 @@
 if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 if (typeof BayrellCommon.Types == 'undefined') BayrellCommon.Types = {};
 BayrellCommon.Types.PathInfo = class{
+	/**
+	 * Returns string
+	 */
+	toString(){
+		return this.filepath;
+	}
+	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.Types.PathInfo";}
 	static getParentClassName(){return "";}
 	_init(){
@@ -29,12 +36,6 @@ BayrellCommon.Types.PathInfo = class{
 		this.filename = "";
 		if (this.__implements__ == undefined){this.__implements__ = [];}
 		this.__implements__.push(Runtime.Interfaces.StringInterface);
-	}
-	/**
-	 * Returns string
-	 */
-	toString(){
-		return this.filepath;
 	}
 }
 BayrellCommon.Types.PathInfo.__static_implements__ = [];
