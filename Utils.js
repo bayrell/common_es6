@@ -112,5 +112,6 @@ BayrellCommon.Utils = class{
 	}
 	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.Utils";}
+	static getCurrentClassName(){return "BayrellCommon.Utils";}
 	static getParentClassName(){return "";}
 }

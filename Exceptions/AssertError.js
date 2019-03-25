@@ -28,5 +28,6 @@ BayrellCommon.Exceptions.AssertError = class extends Runtime.Exceptions.RuntimeE
 	}
 	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.Exceptions.AssertError";}
+	static getCurrentClassName(){return "BayrellCommon.Exceptions.AssertError";}
 	static getParentClassName(){return "Runtime.Exceptions.RuntimeException";}
 }

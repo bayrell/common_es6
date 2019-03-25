@@ -20,5 +20,6 @@ if (typeof BayrellCommon == 'undefined') BayrellCommon = {};
 BayrellCommon.CommonConstant = class{
 	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.CommonConstant";}
+	static getCurrentClassName(){return "BayrellCommon.CommonConstant";}
 	static getParentClassName(){return "";}
 }

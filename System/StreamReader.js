@@ -82,11 +82,12 @@ BayrellCommon.System.StreamReader = class extends Runtime.CoreObject{
 			var buffer = this.stream.readBytes(buffer_length);
 			res.appendVector(buffer);
 		}
-		var s = Utils.bytesToString(res, this.charset);
+		var s = (Runtime.rtl.method(Utils.getClassName(), "bytesToString"))(res, this.charset);
 		return s;
 	}
 	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.System.StreamReader";}
+	static getCurrentClassName(){return "BayrellCommon.System.StreamReader";}
 	static getParentClassName(){return "Runtime.CoreObject";}
 	_init(){
 		super._init();

@@ -76,6 +76,7 @@ BayrellCommon.Types.Pipe = class extends Runtime.CoreObject{
 	}
 	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.Types.Pipe";}
+	static getCurrentClassName(){return "BayrellCommon.Types.Pipe";}
 	static getParentClassName(){return "Runtime.CoreObject";}
 	_init(){
 		super._init();

@@ -27,6 +27,7 @@ BayrellCommon.Types.PathInfo = class{
 	}
 	/* ======================= Class Init Functions ======================= */
 	getClassName(){return "BayrellCommon.Types.PathInfo";}
+	static getCurrentClassName(){return "BayrellCommon.Types.PathInfo";}
 	static getParentClassName(){return "";}
 	_init(){
 		this.filepath = "";
