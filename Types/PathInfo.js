@@ -38,6 +38,17 @@ BayrellCommon.Types.PathInfo = class{
 		if (this.__implements__ == undefined){this.__implements__ = [];}
 		this.__implements__.push(Runtime.Interfaces.StringInterface);
 	}
+	static getFieldsList(names, flag){
+		if (flag==undefined)flag=0;
+	}
+	static getFieldInfoByName(field_name){
+		return null;
+	}
+	static getMethodsList(names){
+	}
+	static getMethodInfoByName(method_name){
+		return null;
+	}
 }
 BayrellCommon.Types.PathInfo.__static_implements__ = [];
 BayrellCommon.Types.PathInfo.__static_implements__.push(Runtime.Interfaces.StringInterface)

@@ -79,5 +79,4 @@ BayrellCommon.Providers.SerializeStringInterface = class{
 	 */
 	getCRLF(){
 	}
-	/* ======================= Class Init Functions ======================= */
 }

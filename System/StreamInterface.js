@@ -71,5 +71,4 @@ BayrellCommon.System.StreamInterface = class{
 	 */
 	writeBytes(data){
 	}
-	/* ======================= Class Init Functions ======================= */
 }

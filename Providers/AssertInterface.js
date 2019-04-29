@@ -82,5 +82,4 @@ BayrellCommon.Providers.AssertInterface = class{
 		if (message == undefined) message="";
 		if (prev == undefined) prev=null;
 	}
-	/* ======================= Class Init Functions ======================= */
 }

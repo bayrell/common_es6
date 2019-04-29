@@ -90,5 +90,4 @@ BayrellCommon.FileSystem.FileSystemInterface = class{
 	 */
 	isDir(path){
 	}
-	/* ======================= Class Init Functions ======================= */
 }
